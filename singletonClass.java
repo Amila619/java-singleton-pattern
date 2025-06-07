@@ -1,5 +1,7 @@
 public class singletonClass
 {
+    private String color = "Blue";
+
     // Eager Initialization
     private static singletonClass INSTANCE = new singletonClass();
     
@@ -12,5 +14,16 @@ public class singletonClass
     {
         return INSTANCE;
     }
+
+    public void setColor(String color_) 
+    {
+        color = color_;
+    }
+
+    public void getColor()
+    {
+        System.out.println(color);
+    }
+
 
 }
